@@ -6,8 +6,8 @@ const TaskList = () => {
   const statuses = ["Not Started", "Ongoing", "Done"];
 
   return (
-    <div className="flex flex-col gap-4 m-3 p-3 w-full">
-      <div className="flex flex-row w-full">
+    <div className="flex flex-col  gap-4 m-3 p-3 w-full">
+      <div className="flex flex-row w-full flex-wrap lg:flex-nowrap">
         {statuses.map((status) => (
           <TaskColumn
             key={status}
